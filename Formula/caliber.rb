@@ -1,25 +1,25 @@
 class Caliber < Formula
   desc "A terminal-based task journal for developers. Capture ideas without leaving your workflow, find them when you need them."
   homepage "https://github.com/bantamhq/caliber"
-  version "1.0.0"
+  version "1.0.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bantamhq/caliber/releases/download/v1.0.0/caliber-aarch64-apple-darwin.tar.xz"
-      sha256 "aedc5fac39f666c1a81f34b4a0209b9704b687b909bfda5f8844501f04733e21"
+      url "https://github.com/bantamhq/caliber/releases/download/v1.0.1/caliber-aarch64-apple-darwin.tar.xz"
+      sha256 "3c552931b801f25ba305ecbd5d9797a79e986b3646ccc62d7634e8b3e806f4c5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bantamhq/caliber/releases/download/v1.0.0/caliber-x86_64-apple-darwin.tar.xz"
-      sha256 "0a5f328bc1aa3c120cc686e6dc9d0633f584819ed1baf7000e0a4d6d7f65553d"
+      url "https://github.com/bantamhq/caliber/releases/download/v1.0.1/caliber-x86_64-apple-darwin.tar.xz"
+      sha256 "04fa13f905d5625f9a0f38c91d4a726f549f556bde4fe47c0626d3ee256ad373"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bantamhq/caliber/releases/download/v1.0.0/caliber-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "6aaf2358266f260567025f7cd2846fa0069955ac2da4224f485455c62838002b"
+      url "https://github.com/bantamhq/caliber/releases/download/v1.0.1/caliber-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f4f24f7b56e2ee982ce1d4952cda46128da7504e9f3256737d9ff06e8fcd1589"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bantamhq/caliber/releases/download/v1.0.0/caliber-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "325fef96c2755f74ebc683518c37c2e14cd03536a723b1b54117131ab39eee21"
+      url "https://github.com/bantamhq/caliber/releases/download/v1.0.1/caliber-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "b39f79843cd6b858c914d5a8d69085aa067e9f84f0cd61e6c86c9ee3d2bd457d"
     end
   end
   license "MIT"
