@@ -5,21 +5,21 @@
 class Eph < Formula
   desc "Minimal, terminal-native git hosting"
   homepage "https://ephemeral.so"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_darwin_amd64.tar.gz"
-      sha256 "7f5fb1386847d9be6301e415a28aaa10195de0bef38f3411264f51f1976fcac0"
+      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.2/eph_darwin_amd64.tar.gz"
+      sha256 "2a6b6f22b39fe6ef6fa9c1ac820c62fc84c2fa4dc08c6b39183cbdb887a4e40f"
 
       def install
         bin.install "eph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_darwin_arm64.tar.gz"
-      sha256 "fab1beb7f991deb6b99f2ee364fe28c2b9b8e4dd319d736d3ef13066f0c7763f"
+      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.2/eph_darwin_arm64.tar.gz"
+      sha256 "f26206433c3573a7d442a46ea7f46b1c90b8879ed13c2c8c517b60e64efaf7fa"
 
       def install
         bin.install "eph"
@@ -29,15 +29,15 @@ class Eph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_linux_amd64.tar.gz"
-      sha256 "f5940737531c94458d49057a6f6c2389e8816f21545e1ec907586910b804a56c"
+      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.2/eph_linux_amd64.tar.gz"
+      sha256 "932a21e952026b1d8495c54221f4699d0a72e3c9345da25c42f20031d014d0a0"
       def install
         bin.install "eph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_linux_arm64.tar.gz"
-      sha256 "7786a26754d2d2d90e75498472aa15cfd03e4fa9d9e61804f09cccfdfb796a4f"
+      url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.2/eph_linux_arm64.tar.gz"
+      sha256 "6dbd03a32e73b06e6893f2ef9f4b075cce0248ea12ca27bd8e0b8653c70db82e"
       def install
         bin.install "eph"
       end
