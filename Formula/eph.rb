@@ -11,7 +11,7 @@ class Eph < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_darwin_amd64.tar.gz"
-      sha256 "a783a3734129f26e0d82354a5f0d60d0c2e088412496b67dddaa8c719f3da419"
+      sha256 "7f5fb1386847d9be6301e415a28aaa10195de0bef38f3411264f51f1976fcac0"
 
       def install
         bin.install "eph"
@@ -19,7 +19,7 @@ class Eph < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_darwin_arm64.tar.gz"
-      sha256 "b83d161d171f3121f4d9ee88e9d6c69dff7dcb6edf49903104368f5794846395"
+      sha256 "fab1beb7f991deb6b99f2ee364fe28c2b9b8e4dd319d736d3ef13066f0c7763f"
 
       def install
         bin.install "eph"
@@ -30,14 +30,14 @@ class Eph < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_linux_amd64.tar.gz"
-      sha256 "45764613b45438e045026283e465663074aabbe63eda31a2f4c88d644f0ccca7"
+      sha256 "f5940737531c94458d49057a6f6c2389e8816f21545e1ec907586910b804a56c"
       def install
         bin.install "eph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bantamhq/ephemeral/releases/download/v0.0.1/eph_linux_arm64.tar.gz"
-      sha256 "d4a8955b66ff8c3ff4c46e2499e3fd89fd7508b9b598cb177d9d12551535ce0e"
+      sha256 "7786a26754d2d2d90e75498472aa15cfd03e4fa9d9e61804f09cccfdfb796a4f"
       def install
         bin.install "eph"
       end
