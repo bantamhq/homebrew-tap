@@ -5,21 +5,21 @@ class Ringside < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/bantamhq/ringside/releases/download/v0.0.2/ringside-aarch64-apple-darwin.tar.xz"
-      sha256 "fe049d59ffd490e9e728cc8b2a4de5643cb82cea6c0e7afabe6410fcf2448c8f"
+      sha256 "54b84e2e2bbce0b591292015cdf78f0d9af7b0364656247b48c45aa0c445fa97"
     end
     if Hardware::CPU.intel?
       url "https://github.com/bantamhq/ringside/releases/download/v0.0.2/ringside-x86_64-apple-darwin.tar.xz"
-      sha256 "be73a2bec89011e7d491794e0baabbffce7516e28594ec27f9bbffbe06b9321a"
+      sha256 "02cb2c0f850aedb17d1cf37400fad59459c9bb33328c66f3cf3b7dbe8366c725"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/bantamhq/ringside/releases/download/v0.0.2/ringside-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "e8adf5dec823e66236fcff606bbc4fa1ec48955da476e8fba0fb150c2084cb5e"
+      sha256 "1b26097a448c8d951eb13bbc00f72c9a4b876ed542712d7154aecda345d6cc69"
     end
     if Hardware::CPU.intel?
       url "https://github.com/bantamhq/ringside/releases/download/v0.0.2/ringside-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "93a00a3cbe62d73c33b8182de628c4e8a24554b66e85c9ed0977481ff560652c"
+      sha256 "753598ef6e7a4b7c07df70ca1e2fb3842b3d749ad47ae9522d60abfce34ed386"
     end
   end
   license "MIT"
