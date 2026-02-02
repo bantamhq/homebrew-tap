@@ -5,21 +5,21 @@ class Cutman < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-aarch64-apple-darwin.tar.xz"
-      sha256 "3ef32d6bc1aa005f77423a14bf8e352bea5e624aced1641f9afe0d3d8384842c"
+      sha256 "2624bd97d3b31c88fd9d7c0b53dc51b08bf48886dfeaff1c922c1e75a51495a2"
     end
     if Hardware::CPU.intel?
       url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-x86_64-apple-darwin.tar.xz"
-      sha256 "9ecca6124a511a6eab18f3bebdabae7c4049702957e0261e6353cf89eeac0efe"
+      sha256 "7b032afbc646221900102f40fe1864ee4ce8c98db8e99278fdd64c1106c2c019"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "647835abc00acbaa731483f2f556d8b4f93939b801be4b36404b82b13cce778a"
+      sha256 "06a5b40f0912dd213abd5955b2dbc713e31eef0249d31f65532b9349d5b3ceec"
     end
     if Hardware::CPU.intel?
       url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "fc0a227bc1e99495fb77b28affdc0569fa39a7736a9b963e8fab20b990f9cb97"
+      sha256 "27f261c329e3a510ca8068cc780043eafd1a364418eadfbb9e6834733bd25b93"
     end
   end
   license "MIT"
