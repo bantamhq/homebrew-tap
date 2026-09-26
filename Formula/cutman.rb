@@ -1,25 +1,25 @@
 class Cutman < Formula
   desc "A lightweight, self-hostable git server built for organizing code, experiments, and AI context."
   homepage "https://github.com/bantamhq/cutman"
-  version "0.0.1"
+  version "0.0.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-aarch64-apple-darwin.tar.xz"
-      sha256 "2624bd97d3b31c88fd9d7c0b53dc51b08bf48886dfeaff1c922c1e75a51495a2"
+      url "https://github.com/bantamhq/cutman/releases/download/0.0.2/cutman-aarch64-apple-darwin.tar.xz"
+      sha256 "e290245ff49269b48b419f814e71f6e02f27171bcb9134329e7df05f97f37f7a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-x86_64-apple-darwin.tar.xz"
-      sha256 "7b032afbc646221900102f40fe1864ee4ce8c98db8e99278fdd64c1106c2c019"
+      url "https://github.com/bantamhq/cutman/releases/download/0.0.2/cutman-x86_64-apple-darwin.tar.xz"
+      sha256 "8bd3b1d1f6bfab6e33afd543102ab170e8f50a405934d31ac76ecfb2e1c2c2ee"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "06a5b40f0912dd213abd5955b2dbc713e31eef0249d31f65532b9349d5b3ceec"
+      url "https://github.com/bantamhq/cutman/releases/download/0.0.2/cutman-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "5b349601486a2845ae9415fc68461b635bdf2133881871ec85301005e4dbc405"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/bantamhq/cutman/releases/download/0.0.1/cutman-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "27f261c329e3a510ca8068cc780043eafd1a364418eadfbb9e6834733bd25b93"
+      url "https://github.com/bantamhq/cutman/releases/download/0.0.2/cutman-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "7cee041afea79c4f7f85c460a2c81afa289002e20e4360698011c8eec9f33128"
     end
   end
   license "MIT"
@@ -48,10 +48,18 @@ class Cutman < Formula
   end
 
   def install
-    bin.install "cutman" if OS.mac? && Hardware::CPU.arm?
-    bin.install "cutman" if OS.mac? && Hardware::CPU.intel?
-    bin.install "cutman" if OS.linux? && Hardware::CPU.arm?
-    bin.install "cutman" if OS.linux? && Hardware::CPU.intel?
+    if OS.mac? && Hardware::CPU.arm?
+      bin.install "cutman"
+    end
+    if OS.mac? && Hardware::CPU.intel?
+      bin.install "cutman"
+    end
+    if OS.linux? && Hardware::CPU.arm?
+      bin.install "cutman"
+    end
+    if OS.linux? && Hardware::CPU.intel?
+      bin.install "cutman"
+    end
 
     install_binary_aliases!
 
